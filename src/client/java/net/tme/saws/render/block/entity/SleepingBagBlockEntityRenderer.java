@@ -26,6 +26,10 @@ import net.tme.saws.render.SawsEntityModelLayers;
 import net.minecraft.block.entity.BedBlockEntity;
 import net.minecraft.util.math.Direction;
 
+/*Rest of code below is based mostly off of SleepingBagBlockEntityRenderer.class and
+BaseComfortsBlockEntityRenderer.class from the Fabric version of the Comforts mod.
+Thank you so much to Illusive Soulworks!*/
+
 public class SleepingBagBlockEntityRenderer implements BlockEntityRenderer<SleepingBagBlockEntity> {
     private final String type;
     protected ModelPart headPiece;
