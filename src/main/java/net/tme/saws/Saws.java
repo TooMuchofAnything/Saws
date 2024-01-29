@@ -2,6 +2,8 @@ package net.tme.saws;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tme.saws.block.SawsBlocks;
+import net.tme.saws.entity.SawsBlockEntities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +21,8 @@ public class Saws implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		SawsBlocks.registerSawsBlocks();
+		SawsBlockEntities.registerBlockEntities();
 	}
 }
