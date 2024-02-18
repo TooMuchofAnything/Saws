@@ -3,30 +3,23 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crafting_table"
+        "recipe": "saws:crafting_table"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_planks": {
-      "conditions": {
-        "items": [
-          {
-            "tag": "minecraft:planks"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
+    "unlock_right_away": {
+      "trigger": "minecraft:tick"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_planks"
+      "unlock_right_away"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:crafting_table"
+      "saws:crafting_table"
     ]
   }
 }
